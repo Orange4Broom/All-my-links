@@ -1,0 +1,182 @@
+:root {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 25px;
+    color: #FCF3CF;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+
+    background-color: rgb(20, 20, 29);
+    
+}
+
+a, i {
+    text-decoration: none;
+    color: #FCF3CF;
+    z-index: 5;
+}
+
+#particles-js {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+
+    z-index: 1;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+}
+
+.header {
+    font-weight: 400;
+    color: rgba(68, 239, 136, 0.533);
+    font-size: 72px;
+    margin-bottom: 5%;
+}
+
+.header:hover {
+    color: rgba(68, 239, 136, 0.533);
+    cursor: default;
+    text-decoration: 4px underline rgba(68, 239, 136, 0.533);
+    transition: 0.2s;
+}
+
+.bruh {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+    width: auto;
+    gap: 20%;
+    
+
+    font-size: 92px;
+    color: #FCF3CF;
+
+}
+
+.second {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
+    width: auto;
+    margin-top: 2%;
+    gap: 30%;
+
+    font-size: 92px;
+    color: #FCF3CF;
+
+}
+
+i:hover {
+    cursor: pointer;
+    font-size: 102px;
+    transition: all 0.5s;
+    color: rgba(68, 239, 136, 0.533);
+    
+
+    gap: 20%;
+    text-shadow: 8px 8px 10px rgb(33, 33, 50);
+}
+
+@media only screen and (max-width:769px) {
+
+    .header {
+        font-size: 50px;
+        margin-bottom: 10%;
+    }
+
+    .bruh , .second {
+        font-size: 72px;
+    }
+
+    .second {
+        gap: 40%;
+    }
+
+    i:hover {
+        font-size: 82px;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width: 1000px)  {
+
+    .header {
+        margin-bottom: 5%;
+    }
+
+    .header {
+        font-size: 55px;
+        margin-bottom: 3%;
+    }
+
+    .bruh, .second {
+        font-size: 72px;
+    }
+
+    i:hover {
+        font-size: 72px;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .header {
+        font-size: 50px;
+        margin-bottom: 20%;
+    }
+
+    .bruh {
+        gap: 9%;
+        font-size: 62px;
+    }
+
+    .second {
+        font-size: 62px;
+        gap: 15%;
+    }
+
+    i:hover {
+        font-size: 72px;
+    }
+}
+
+@media only screen and (max-height:520px) {
+
+   .bruh, .second {
+    font-size: 62px;
+   }
+
+   .second {
+    padding-bottom: 10%;
+   }
+
+
+
+   i:hover {
+    font-size: 72px;
+   }
+}

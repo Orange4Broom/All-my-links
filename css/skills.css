@@ -1,0 +1,571 @@
+:root {
+  font-family: 'Red Hat Display', sans-serif; 
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    background-color: rgb(20, 20, 29);
+}
+
+#particles-js {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 200vh;
+  opacity: 0.7;
+  z-index: 1;
+}
+/*
+.header {
+    font-size: 82px;
+    color: rgba(66, 123, 88, 1);
+
+    z-index: 1;
+}
+*/
+
+.one {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 50vw;
+    padding-top: 3%;
+
+}
+
+.image {
+    height: 500px;
+    filter: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+
+.image:hover {
+    scale: 110%;
+    transition: ease-out 0.7s;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 50vw;
+}
+
+.padd {
+    padding-left: 15%;
+    padding-bottom: 10%;
+}
+
+.header-skills {
+    cursor: default;
+    font-size: 72px;
+    font-weight: 500;
+    
+    color: rgb(66, 136, 95);
+    text-decoration: underline 3px;
+  }
+
+/* HTML loader */
+
+.header-html {
+  font-size: 28px;
+  font-weight: 700;
+  cursor: default;
+  color: rgba(7, 102, 120, 1);
+}
+
+.header-html:hover {
+  text-decoration: underline 2px;
+}
+
+.back-html {
+  height: 20px;
+  width: 500px;
+  background-color: rgba(69, 133, 136, 0.2);
+  box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.40);
+  
+  animation-name: back;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+.front-html {
+  height: 20px;
+  width: 500px;
+  background-color: rgba(7, 102, 120, 1);
+  
+  animation-name: html-front;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+/* CSS loader */
+
+.header-css {
+  font-size: 28px;
+  font-weight: 700;
+  cursor: default;
+  color: rgba(214, 93, 14, 1);
+}
+
+.header-css:hover {
+  text-decoration: underline 2px;
+}
+
+.back-css {
+  height: 20px;
+  width: 500px;
+  
+  background-color: rgba(214, 93, 14, 0.2);
+  box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.40);
+  
+  animation-name: back;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+}
+
+.front-css {
+  height: 20px;
+  width: 400px;
+  background-color: rgba(214, 93, 14, 1);
+  
+  animation-name: css-front;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+/* CSS loader */
+
+.header-js {
+  font-size: 28px;
+  font-weight: 700;
+  cursor: default;
+  color: rgba(215, 153, 33, 1);
+}
+
+.header-js:hover {
+  text-decoration: underline 2px;
+}
+
+.back-js {
+  height: 20px;
+  width: 500px;
+  
+  background-color: rgba(215, 153, 33, 0.2);
+  box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.40);
+  
+  animation-name: back;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.front-js {
+  height: 20px;
+  width: 50px;
+  background-color: rgba(215, 153, 33, 1);
+  
+  animation-name: js-front;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+
+/* Animations */
+
+@keyframes back {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 500px;
+    animation-timing-function: ease-out;
+  }
+}
+
+
+/* HTML loadbar animation */
+@keyframes html-front {
+  0% {
+    width: 0px;
+    
+  }
+  100% {
+    width: 100%;
+    animation-timing-function: ease-out;
+  }
+}
+
+
+/* CSS loadbar animation */
+@keyframes css-front {
+  0% {
+    width: 0px;
+    
+  }
+  100% {
+    width: 80%;
+    animation-timing-function: ease-out;
+  }
+}
+
+
+/* JS loadbar animation */
+@keyframes js-front {
+  0% {
+    width: 0px;
+    
+  }
+  100% {
+    width: 10%;
+    animation-timing-function: ease-out;
+  }
+}
+
+
+/* Responsive shit */
+
+@media only screen and (max-width:1550px) and (min-width: 1200px) {
+  .header-skills {
+    font-size: 52px;
+  }
+}
+
+@media only screen and (max-width:1200px) and (min-width: 1000px) {
+
+  body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .header-skills {
+    font-size: 52px;
+  }
+
+  .image {
+    height: 500px;
+    filter: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+
+.image:hover {
+    scale: 110%;
+    transition: ease-out 0.7s;
+}
+
+  .padd {
+    
+    padding: 0;
+    
+}
+
+  .one {
+    flex-direction: column-reverse;
+    height: 200vh;
+  }
+
+  .left {
+    width: 100vw;
+  }
+
+  .right {
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 580px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .header-skills {
+    font-size: 42px;
+  }
+
+  .image {
+    height: 400px;
+    filter: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+
+.image:hover {
+    scale: 110%;
+    transition: ease-out 0.7s;
+}
+
+  .one {
+    
+    flex-direction: column-reverse;
+    height: 140vh;
+  }
+
+  .padd {
+    justify-content: center;
+    align-items: center;
+    padding: 0; 
+}
+
+  .left {
+    height: 70vh;
+    width: 100vw;
+  }
+
+  .right {
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 580px) and (min-width: 530px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .image {
+    height: 300px;
+    filter: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+
+.image:hover {
+    scale: 110%;
+    transition: ease-out 0.7s;
+}
+
+.padd {
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+  .one {
+    flex-direction: column-reverse;
+    height: 200vh;
+  }
+
+  .left {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .right {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .header-skills {
+    font-size: 32px
+  }
+}
+
+
+@media only screen and (max-width: 530px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .image {
+    height: 250px;
+    filter: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+
+.image:hover {
+    scale: 110%;
+    transition: ease-out 0.7s;
+}
+
+  .padd {
+    padding: 0;
+    
+}
+
+  .one {
+    flex-direction: column-reverse;
+    height:90vh;
+  }
+
+  .left {
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+  }
+
+  .right {
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .header-skills {
+    font-size: 32px
+  }
+
+  /* HTML loader */
+
+  .header-html {
+    font-size: 22px;
+    cursor: default;
+    color: rgba(7, 102, 120, 1);
+    text-decoration: underline 2px;
+  }
+  
+  .back-html {
+    height: 20px;
+    width: 300px;
+    background-color: rgba(69, 133, 136, 0.2);
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.40);
+    
+    animation-name: back;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  .front-html {
+    height: 20px;
+    width: 300px;
+    background-color: rgba(7, 102, 120, 1);
+    
+    animation-name: html-front;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+  
+  /* CSS loader */
+  
+  .header-css {
+    font-size: 22px;
+    cursor: default;
+    color: rgba(214, 93, 14, 1);
+    text-decoration: underline 2px;
+  }
+  
+  .back-css {
+    height: 20px;
+    width: 300px;
+    
+    background-color: rgba(214, 93, 14, 0.2);
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.40);
+    
+    animation-name: back;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+  
+  .front-css {
+    height: 20px;
+    width: 250px;
+    background-color: rgba(214, 93, 14, 1);
+    
+    animation-name: css-front;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+  }
+  
+  /* CSS loader */
+  
+  .header-js {
+    font-size: 22px;
+    cursor: default;
+    color: rgba(215, 153, 33, 1);
+    text-decoration: underline 2px;
+  }
+  
+  .back-js {
+    height: 20px;
+    width: 300px;
+    
+    background-color: rgba(215, 153, 33, 0.2);
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.40);
+    
+    animation-name: back;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+  }
+  
+  .front-js {
+    height: 20px;
+    width: 25px;
+    background-color: rgba(215, 153, 33, 1);
+    
+    animation-name: js-front;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+  }
+  
+  
+  /* Animations */
+  
+  @keyframes back {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 300px;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  @keyframes js-front {
+    0% {
+      width: 0px;
+      
+    }
+    100% {
+      width: 25px;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  @keyframes css-front {
+    0% {
+      width: 0px;
+      
+    }
+    100% {
+      width: 250px;
+      animation-timing-function: ease-out;
+    }
+  }
+}
