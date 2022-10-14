@@ -95,7 +95,7 @@ a, i {
 i:hover {
     cursor: pointer;
     font-size: 102px;
-    transition: all 0.5s;
+    transition: all 0.2s;
     color: rgba(68, 239, 136, 0.533);
     
 
